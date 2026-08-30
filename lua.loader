@@ -32,7 +32,7 @@ _G.window = window
 local AutoFarm = window:AddTab("Farm")
 
 _G.repToggle = false
-AutoFarm:AddSwitch("💪 Auto Farm (Equip Any weight)", function(state)
+AutoFarm:AddSwitch("💪 Auto Farm (Equip Any tool)", function(state)
     _G.repToggle = state
     task.spawn(function()
         while _G.repToggle do
